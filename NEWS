@@ -1,3 +1,7 @@
+version 1.0.4
+________________________________________________________________________________
+* Fixed bug when using openjdk instead of Oracle Java runtime
+
 version 1.0.3
 ________________________________________________________________________________
 * Fixed bug in Vignette introduced in 1.0.1
