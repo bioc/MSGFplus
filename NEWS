@@ -1,3 +1,7 @@
+version 1.0.5
+________________________________________________________________________________
+* Changed system to shell when running async on windows
+
 version 1.0.4
 ________________________________________________________________________________
 * Fixed bug when using openjdk instead of Oracle Java runtime
