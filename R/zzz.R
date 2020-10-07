@@ -2,10 +2,13 @@
 Sys.which2 <- function(cmd) {
     stopifnot(length(cmd) == 1)
     if (.Platform$OS.type == "windows") {
-        suppressWarnings({
-            pathname <- shell(sprintf("where %s 2> NUL", cmd), intern=TRUE)[1]
-        })
-        if (!is.na(pathname)) return(stats::setNames(pathname, cmd))
+        path <- Sys.getenv("JAVA_HOME")
+        if (path == "" || !dir.exists(path)) {
+            suppressWarnings({
+                path <- shell(sprintf("where %s 2> NUL", cmd), intern=TRUE)[1]
+            })
+        }
+        if (!is.na(path)) return(stats::setNames(path, cmd))
     }
     Sys.which(cmd)
 }
