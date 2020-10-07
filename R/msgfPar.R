@@ -25,8 +25,7 @@ NULL
 #' with msgfParModificationList, the class is a bit more complex.
 #' 
 #' @section Objects from the class:
-#' Objects can be created using the \code{\link{msgfPar}} constructor, or with 
-#' \code{\link{msgfParGUI}} for a simple graphical user interface
+#' Objects can be created using the \code{\link{msgfPar}} constructor
 #' 
 #' @slot database The location of the database fasta file used for the analysis.
 #' @slot tolerance An \code{msgfParTolerance} object holding the m/z tolerance 
@@ -54,7 +53,6 @@ NULL
 #' @slot matches An \code{msgfParMatches} object defining the number of matches 
 #' per PSM that gets reported in the output.
 #' 
-#' @seealso \code{\link{msgfParGUI}}
 #' @family msgfParClasses
 #' 
 #' @references \url{http://proteomics.ucsd.edu/Software/MSGFPlus.html}
